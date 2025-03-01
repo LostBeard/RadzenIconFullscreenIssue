@@ -36,7 +36,7 @@ The issue seems to not appear if you do not use a `<RadzenIcon>` with a `fullscr
 - Observe the issue
 
 !IMPORTANT: 
-- Close the tab, and in a new tab go to the Demo again. (Simply refreshing the tab does not fully reset the issue.)
+- Close the tab, and in a new tab go to the Demo again. (Refreshing the tab does not fully reset the issue.)
 
 #### Show the issue does not occur without RadzenIcon
 - Visit the demo link above.
@@ -55,7 +55,7 @@ The issue seems to not appear if you do not use a `<RadzenIcon>` with a `fullscr
 - `<RadzenIcon>` with icons other than `fullscreen` have shown to not trigger the issue.
 
 Issue on macOS Sequoia on browserstack.com:
-[Sequoia](https://github.com/LostBeard/RadzenIconFullscreenIssue/raw/refs/heads/main/RadzenIconFullscreenIssue/Media/screenRecording-1-3-2025-9-11.mp4)
+[Sequoia Chrome 133 Video](https://github.com/LostBeard/RadzenIconFullscreenIssue/raw/refs/heads/main/RadzenIconFullscreenIssue/Media/screenRecording-1-3-2025-9-11.mp4)
 
 Issue on Windows 10 on browserstack.com:
-[Windows 10](https://github.com/LostBeard/RadzenIconFullscreenIssue/raw/refs/heads/main/RadzenIconFullscreenIssue/Media/screenRecording-1-3-2025-9-15.mp4)
+[Windows 10 Chrome 133 Video](https://github.com/LostBeard/RadzenIconFullscreenIssue/raw/refs/heads/main/RadzenIconFullscreenIssue/Media/screenRecording-1-3-2025-9-15.mp4)
