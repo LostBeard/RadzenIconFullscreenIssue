@@ -23,14 +23,10 @@
 <div @ref=grapesDiv style="background: inherit;">
     <div>
         Grapes!<br/>
-
-        Clicking the button below will call "requestFullscreen()" on the "grapes" div.<br />
-        Having the RadzenIcon with the "fullscreen" icon seems to somehow interfere with the element going fullscreen, and instead the entire document will go fullscreen.<br/>
-        This issue has been tested and found to exist in Google Chrome 133 on Windows 10 and macOS Sequoia.<br/>
-        Firefox and Edge worked as expected.
+        You must come to this tab after loading the app in a fresh tab, without going to "Without RadzenIcon" first.
     </div>
     <button class="btn btn-primary" @onclick="ToggleFullscreen">Toggle Fullscreen</button>
-    <RadzenIcon Icon="fullscreen"></RadzenIcon>
+    <RadzenIcon Icon="&#xe5d0"></RadzenIcon>
 </div>
 
 @code {

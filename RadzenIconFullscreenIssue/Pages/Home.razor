@@ -1,30 +1,9 @@
 ﻿@page "/"
 
-<PageTitle>RadzenIcon Fullscreen Issue</PageTitle>
+<PageTitle>RadzenIcon Fullscreen Chrome Issue</PageTitle>
 
-<h1>RadzenIcon Fullscreen Issue</h1>
+<h1>RadzenIcon Fullscreen Chrome Issue</h1>
 
 <div>
-    <div>
-        <p>If you use a RadzenIcon with the icon "fullscreen" and then try to make an element fullscreen using element.requestFullscreen() the document will be made fullscreen, not the element.</p>
-        <p>The issue will persist even if the RadzenIcon is changed or removed (for example, when the page changes.)</p>
-        <p>The only fix is to not use the icon "fullscreen" for the RadzenIcon at all if you need element.requestFullscreen to function as expected.</p>
-        <p>
-            Using a RadzenIcon with the icon "fullscreen" and is located outside of an element that tries to go fullscreen
-            the entire document will be made fullscreen instead of the element but only in Google Chrome. Microsoft Edge and Mozilla Firefox work as expected.
-        </p>
-        <p>This can be tested by clicking the button below to call "requestFullscreen()" on the "grapes" div.</p>
-        <p>The entire document will be made fullscreen instead of the div that called "requestFullscreen()".</p>
-        <p>Renaming the icon used below to something other than "fullscreen" (like "expand_circle_up") and restarting the app will fix the issue.</p>
-        <p>This issue has been tested and found to exist in Google Chrome 133 on Windows 10 and macOS Sequoia.</p>
-    </div>
-    <div>
-        There are 2 pages in this demo. One with the fullscreen icon and one without. Click the links below to navigate between the pages.<br/>
-        NOTE: Once you load the page with the fullscreen icon or try to fullscreen on that page, the issue may persist until you restart the app.
-    </div>
-    <div>
-        <h3>TL;DR</h3>
-        <p>The issue is inconsistent and does not occur reliably even with the steps stated above.</p>
-        <p>RadzenIcon with icons other than `fullscreen` have shown to not trigger the issue.</p>
-    </div>
+    Issue Info: <a href="https://github.com/LostBeard/RadzenIconFullscreenIssue">RadzenIconFullscreenIssue</a>
 </div>
