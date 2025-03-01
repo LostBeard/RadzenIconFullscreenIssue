@@ -75,5 +75,7 @@ After @akorchev refused to follow the simple instructions I gave him to reproduc
 @akorchev wrote:
 `I have spent 30 minutes of my weekend to troubleshot this issue. Even suggested a workaround despite being unable to reproduce what is obviously a browser bug. If this is not enough for you please move on to a different component library.`
 
+I spent hours trying to figure out what was causing the issue, and I was able to reproduce it consistently. I even provided a video, a repo, and instructions to show the issue. 
+
 I have since moved on to a better component library, and I am sharing this issue here to help others who may encounter the same issue. I hope this helps someone else who may encounter this issue.
 
