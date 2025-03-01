@@ -27,6 +27,22 @@ The issue seems to not appear if you do not use a `<RadzenIcon>` with a `fullscr
 ## Demo
 [Demo](https://lostbeard.github.io/RadzenIconFullscreenIssue/)
 
+### How to use the demo
+
+#### Reproduce the issue
+- Visit the demo link above.
+- Click the `With RadzenIcon` in the nav bar
+- Click the `Toggle Fullscreen` button
+- Observe the issue
+
+!IMPORTANT: Close the tab, and in a new tab go to the Demo again. Simply refreshing the tab does not fully reset the issue.
+
+#### Show the issue does not occur without RadzenIcon
+- Visit the demo link above.
+- Click the `Without RadzenIcon` in the nav bar
+- Click the `Toggle Fullscreen` button
+- Observe the issue does not occur
+
 There are are 3 pages.  
 - `Home` Explains the issue.
 - `With RadzenIcon` Demonstrates the issue with a RadzenIcon.
@@ -51,6 +67,5 @@ The issue may start just by visiting the page with the RadzenIcon before going t
 - The issue is inconsistent and does not occur reliably even with the steps stated above.
 - `<RadzenIcon>` with icons other than `fullscreen` have shown to not trigger the issue.
 
-Closing the tab and reloading the page in a new tab is the only way to completely reset the issue.
 
 
