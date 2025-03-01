@@ -67,5 +67,5 @@ The issue may start just by visiting the page with the RadzenIcon before going t
 - The issue is inconsistent and does not occur reliably even with the steps stated above.
 - `<RadzenIcon>` with icons other than `fullscreen` have shown to not trigger the issue.
 
-
-
+I have reported this issue here:  
+[radzenhq/radzen-blazor/issues/2010](https://github.com/radzenhq/radzen-blazor/issues/2010)
