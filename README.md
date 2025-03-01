@@ -36,7 +36,7 @@ The issue seems to not appear if you do not use a `<RadzenIcon>` with a `fullscr
 - Observe the issue
 
 !IMPORTANT: 
-- Close the tab, and in a new tab go to the Demo again. (Simply refreshing the tab does not fully reset the issue.)
+- Close the tab, and in a new tab go to the Demo again. (Refreshing the tab does not fully reset the issue.)
 
 #### Show the issue does not occur without RadzenIcon
 - Visit the demo link above.
