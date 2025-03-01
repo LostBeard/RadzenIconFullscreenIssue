@@ -1,11 +1,12 @@
 # RadzenIconFullscreenIssue
+`<RadzenIcon Icon="fullscreen">` can cause `element.requestFullscreen()` to misbehave in Chrome.
 
-Demonstrates a possible issue related to RadzenIcon, element.requestFullscreen, and the Chrome web browser.
+This repository demonstrates a possible issue related to RadzenIcon, element.requestFullscreen, and the Chrome web browser.
 
 ## Steps to reproduce
 - Start a new Blazor WASM Standalone project
 - Add Radzen to the project
-- Add a `<RadzenIcon Icons="fullscreen">` to a page
+- Add a `<RadzenIcon Icon="fullscreen">` to a page
 - Add code to the page to call `element.requestFullscreen()` on a div when a button is clicked
 - Run the project in Chrome
 - Click the button to request fullscreen
@@ -18,7 +19,6 @@ The element that called `requestFullscreen()` should go fullscreen and not the e
 The entire document goes fullscreen and not the element that called `requestFullscreen()`
 
 ## Additional information
-
 This issue does not occur in Firefox or Edge. It has been observed in Chrome 133 on Windows 10, and macOS Sequoia.
 
 ## Workaround
@@ -34,17 +34,21 @@ There are are 3 pages.
 
 The only difference between the `With RadzenIcon` and `Without RadzenIcon` pages is the use of a RadzenIcon.
 
-If you go o the page without the RadzenIcon and click the fullscreen button, the issue does not occur.
+If you go to the page without the RadzenIcon and click the fullscreen button, the issue does not occur.
 
-If you go to the page with the RadzenIcon and click the fullscreen button, the issue occurs.
+If you go to the page with the RadzenIcon and click the fullscreen button, the issue usually occurs.
 
-The issue may start just by visiting the page with the RadzenIcon before going to the page without.
+The issue may start just by visiting the page with the RadzenIcon before going to the page without. Going fullscreen using the page without the RadzenIcon first may cause the page with the RadzenIcon to work as correctly. 
 
-## Radzen version
-6.0.19
+## Version
+- Radzen 6.0.19
+- Windows 10 64 bit
+- macOS Sequoia (tested on browserstack.com)
+- Chrome 133
 
 ## TL;DR
-The issue is inconsistent and does not occur reliably even with the steps stated above.  
+- `<RadzenIcon Icon="fullscreen">` can cause `element.requestFullscreen()` to misbehave in Chrome.
+- The issue is inconsistent and does not occur reliably even with the steps stated above.  
+- `<RadzenIcon>` with icons other than `fullscreen` have shown to not trigger the issue.
 
-`<RadzenIcon>` with icons other than `fullscreen` have shown to not trigger the issue.
 
