@@ -44,4 +44,7 @@ The issue may start just by visiting the page with the RadzenIcon before going t
 6.0.19
 
 ## TL;DR
-The issue seems to not appear if you do not use a `<RadzenIcon>` with a `fullscreen` icon.
+The issue is inconsistent and does not occur reliably even with the steps stated above.  
+
+`<RadzenIcon>` with icons other than `fullscreen` have shown to not trigger the issue.
+
