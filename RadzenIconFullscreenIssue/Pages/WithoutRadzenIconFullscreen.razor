@@ -1,0 +1,50 @@
+﻿@page "/WithoutRadzenIconFullscreen"
+@using Radzen.Blazor
+
+<script>
+    function fullscreenElement(el)
+    {
+    el.requestFullscreen();
+    }
+    function isFullscreen()
+    {
+    return document.fullscreenElement !== null;
+    }
+    function exitFullscreen()
+    {
+    document.exitFullscreen();
+    }
+</script>
+
+<PageTitle>RadzenIcon Fullscreen Issue</PageTitle>
+
+<h1>RadzenIcon Fullscreen Issue</h1>
+
+<div @ref=grapesDiv style="background: inherit;">
+    <div>
+        Grapes!<br/>
+        If you haven't already gone to the page with the fullscreen icon, then the grapes div will go fullscreen as expected.<br/>
+        Results have been somewhat inconsistent.
+    </div>
+    <button class="btn btn-primary" @onclick="ToggleFullscreen">Toggle Fullscreen</button>
+</div>
+
+@code {
+    
+    [Inject] private IJSRuntime JSRuntime { get; set; } = default!;
+
+    ElementReference grapesDiv;
+
+    private async Task ToggleFullscreen()
+    {
+        var isFullscreen = await JSRuntime.InvokeAsync<bool>("isFullscreen");
+        if (isFullscreen)
+        {
+            await JSRuntime.InvokeVoidAsync("exitFullscreen");
+        }
+        else
+        {
+            await JSRuntime.InvokeVoidAsync("fullscreenElement", grapesDiv);
+        }
+    }
+}
